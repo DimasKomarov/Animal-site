@@ -32,7 +32,8 @@ body
     z-index: 1
 
     display: grid
-    grid-template: 900px / minmax(auto,1340px) minmax(auto,100px)
+    grid-template: 800px 100px / minmax(140px,1340px) minmax(50px,100px)
+    grid-template-areas: "a b" "c b"
     // fit-content для ограничения максимальной ширины
     // repeat для повторения одинаковых размеров
     // grid-template для скоращенной записи выше
@@ -40,47 +41,59 @@ body
     // grid-area название контейнера для св-ва выше
 
 .video-preview
+    grid-area: a
+    img
+        max-width: 1440px
+        max-height: 900px
     // background-color: red
 
 .menu
-    display: grid
-    grid-template: 252px 144px / 100px
-    row-gap: 264px
+    grid-area: b
+    display: flex
+    flex-direction: column
+    gap: 264px
     background: linear-gradient(180.71deg, #7A8110 0.11%, #A2B332 100%)
 
-.menu_burger-and-links
-    display: grid
-    grid-template: 22px 90px / 100px
-    row-gap: 100px
+.menu__burger-and-links
     padding-top: 35px
+    display: flex
+    flex-direction: column
+    gap: 100px
 
-    background-color: #1977c4
+    // background-color: #c4197d
 
 .menu__burger
-    display: grid
+    display: flex
     justify-content: center
     border: none
-    text-decoration: none
 
-    background-color: #202416
+    background-color: transparent
+
+    // background-color: #99c232
 .menu__links
-    display: grid
-    grid-template: 20px 20px / 100px
-    row-gap: 50px
-    justify-items: center
+    display: flex
+    flex-direction: column
+    box-sizing: border-box
+    padding: 0px 40px
+    gap: 50px
 
-    background-color: #3f3f3c
+    // background-color: #3f3f3c
 
 .menu__vkont
-    background-color: #0a8e34
+    max-width: 20px
+
+    // background-color: #0a8e34
 
 .menu__telega
-    background-color: #1532c3
+    max-width: 20px
+
+    // background-color: #1532c3
 
 .menu__name-video
-    display: grid
-    justify-items: center
-    background-color: #27ca56
+    display: flex
+    justify-content: center
+
+    // background-color: #a0f0b7
     p
         writing-mode: vertical-lr
         font-family: 'Roboto'
@@ -92,7 +105,128 @@ body
         text-transform: uppercase
         color: rgba(255, 255, 255, 0.7)
     span
+        line-height: 30px
         font-weight: 500
         font-size: 30px
         color: #FFFFFF
-        
+
+.menu__name-video-AND-play-video
+    display: flex
+    flex-direction: column
+    gap: 40px
+
+.menu__str
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #89941D
+
+.menu__str_block
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 100px
+    height: 100px
+    img
+        max-width: 14px
+        max-height: 28px
+
+.menu__line
+    width: 60px
+    height: 0px
+    background-color: #FFFFFF
+    opacity: 0.8
+    border: 1px solid #FFFFFF
+
+.desc
+    grid-area: c
+    display: flex
+    align-content: center
+    background: rgba(00, 00, 00, 0.35)
+
+.desc__text
+    display: flex
+    align-items: center
+    padding-left: 70px
+    gap: 50px
+    // background-color: red
+
+.desc__bear
+    display: flex
+    max-width: 242px
+    width: 100%
+    flex-direction: column
+    gap: 10px
+    p
+        font-family: 'Arial'
+        font-style: normal
+        font-weight: 700
+        font-size: 30px
+        line-height: 30px
+        text-align: center
+        text-transform: capitalize
+        color: #FFFF00
+    span
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        line-height: 20px
+        text-transform: capitalize
+        color: #FFFFFF
+        opacity: 0.4
+
+.desc__line2
+    width: 0px
+    height: 60px
+    background-color: #FFFFFF
+    opacity: 0.8
+    border: 1px solid #FFFFFF
+
+.desc__bear-text
+    display: flex
+    gap: 10px
+    max-width: 565px
+    flex-direction: column
+    p
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 18px
+        color: #FFFFFF
+        opacity: 0.9
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75)
+    span
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 20px
+        color: #FFFF00
+
+.desc__bear-number
+    display: flex
+    max-width: 146px
+    width: 100% 
+    gap: 10px
+    flex-direction: column
+    p
+        font-family: 'Arial'
+        font-style: normal
+        font-weight: 700
+        font-size: 30px
+        line-height: 30px
+        text-align: center
+        text-transform: capitalize
+        color: #FFFF00
+    span
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 20px
+        text-align: center
+        text-transform: capitalize
+        color: #FFFFFF
+        opacity: 0.9

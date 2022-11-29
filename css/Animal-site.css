@@ -34,52 +34,59 @@ body {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template: 900px/minmax(auto, 1340px) minmax(auto, 100px);
+  grid-template: 800px 100px/minmax(140px, 1340px) minmax(50px, 100px);
+  grid-template-areas: "a b" "c b";
+}
+
+.video-preview {
+  grid-area: a;
+}
+.video-preview img {
+  max-width: 1440px;
+  max-height: 900px;
 }
 
 .menu {
-  display: grid;
-  grid-template: 252px 144px/100px;
-  row-gap: 264px;
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  gap: 264px;
   background: linear-gradient(180.71deg, #7A8110 0.11%, #A2B332 100%);
 }
 
-.menu_burger-and-links {
-  display: grid;
-  grid-template: 22px 90px/100px;
-  row-gap: 100px;
+.menu__burger-and-links {
   padding-top: 35px;
-  background-color: #1977c4;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .menu__burger {
-  display: grid;
+  display: flex;
   justify-content: center;
   border: none;
-  text-decoration: none;
-  background-color: #202416;
+  background-color: transparent;
 }
 
 .menu__links {
-  display: grid;
-  grid-template: 20px 20px/100px;
-  row-gap: 50px;
-  justify-items: center;
-  background-color: #3f3f3c;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0px 40px;
+  gap: 50px;
 }
 
 .menu__vkont {
-  background-color: #0a8e34;
+  max-width: 20px;
 }
 
 .menu__telega {
-  background-color: #1532c3;
+  max-width: 20px;
 }
 
 .menu__name-video {
-  display: grid;
-  justify-items: center;
-  background-color: #27ca56;
+  display: flex;
+  justify-content: center;
 }
 .menu__name-video p {
   -ms-writing-mode: tb-lr;
@@ -94,7 +101,145 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 .menu__name-video span {
+  line-height: 30px;
   font-weight: 500;
   font-size: 30px;
   color: #FFFFFF;
+}
+
+.menu__name-video-AND-play-video {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu__str {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #89941D;
+}
+
+.menu__str_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  height: 100px;
+}
+.menu__str_block img {
+  max-width: 14px;
+  max-height: 28px;
+}
+
+.menu__line {
+  width: 60px;
+  height: 0px;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  border: 1px solid #FFFFFF;
+}
+
+.desc {
+  grid-area: c;
+  display: flex;
+  align-content: center;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.desc__text {
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  gap: 50px;
+}
+
+.desc__bear {
+  display: flex;
+  max-width: 242px;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+.desc__bear p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFF00;
+}
+.desc__bear span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.desc__line2 {
+  width: 0px;
+  height: 60px;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  border: 1px solid #FFFFFF;
+}
+
+.desc__bear-text {
+  display: flex;
+  gap: 10px;
+  max-width: 565px;
+  flex-direction: column;
+}
+.desc__bear-text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.9;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
+}
+.desc__bear-text span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFF00;
+}
+
+.desc__bear-number {
+  display: flex;
+  max-width: 146px;
+  width: 100%;
+  gap: 10px;
+  flex-direction: column;
+}
+.desc__bear-number p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFF00;
+}
+.desc__bear-number span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  opacity: 0.9;
 }/*# sourceMappingURL=Animal-site.css.map */
