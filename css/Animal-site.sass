@@ -32,7 +32,7 @@ body
     z-index: 1
 
     display: grid
-    grid-template: 800px 100px / minmax(140px,1340px) minmax(50px,100px)
+    grid-template: 89vh 11vh / minmax(140px,100%) minmax(50px,100px)
     grid-template-areas: "a b" "c b"
     // fit-content для ограничения максимальной ширины
     // repeat для повторения одинаковых размеров
@@ -42,17 +42,20 @@ body
 
 .video-preview
     grid-area: a
-    img
-        max-width: 1440px
-        max-height: 900px
+    width: 100%
     // background-color: red
 
+.video-preview__bear 
+    width: 100%
+    height: 100vh
+    object-fit: cover
+
 .video-preview__play
+    position: absolute
+    top: 46vh
+    left: 2vw
     display: flex
     align-items: end
-    position: absolute
-    top: 415px
-    padding-left: 69px
     gap: 405px
     z-index: 2
     vertical-align: sub
@@ -69,11 +72,14 @@ body
         border: none
         background-color: transparent
 
+.video-preview__button
+    max-width: 100px
+
 .menu
     grid-area: b
     display: flex
     flex-direction: column
-    gap: 264px
+    justify-content: space-between
     background: linear-gradient(180.71deg, #7A8110 0.11%, #A2B332 100%)
 
 .menu__burger-and-links
