@@ -32,9 +32,9 @@ body {
   overflow: hidden;
   min-height: 100vh;
   position: relative;
-  z-index: 1;
+  transition: 1s;
   display: grid;
-  grid-template: 89vh 11vh/minmax(140px, 100%) minmax(50px, 100px);
+  grid-template: 89vh 11vh/minmax(140px, 100vw) minmax(50px, 100px);
   grid-template-areas: "a b" "c b";
 }
 
@@ -99,14 +99,16 @@ body {
   justify-content: center;
   border: none;
   background-color: transparent;
+  transition: 0.3s;
 }
 
 .menu__links {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 0px 40px;
+  margin: 0 auto;
   gap: 50px;
+  transition: 1s;
 }
 
 .menu__vkont {
@@ -140,6 +142,41 @@ body {
   color: #FFFFFF;
 }
 
+.menu__name-video-br-link {
+  display: none;
+  margin: 0 auto;
+}
+.menu__name-video-br-link p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.menu__name-video-br-link span {
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.menu__name-video-playlist {
+  display: none;
+}
+.menu__name-video-playlist p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 .menu__name-video-AND-play-video {
   display: flex;
   flex-direction: column;
@@ -153,12 +190,54 @@ body {
   background-color: #89941D;
 }
 
+.menu__str_block-img {
+  max-height: 100px;
+  display: flex;
+}
+
+.menu__str_img-kas {
+  position: relative;
+  display: none;
+  align-items: center;
+}
+.menu__str_img-kas p {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.menu__str_img-kas img {
+  height: 100px;
+}
+
+.menu__str_img-oran {
+  position: relative;
+  display: none;
+  align-items: center;
+}
+.menu__str_img-oran p {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.menu__str_img-oran img {
+  height: 100px;
+}
+
 .menu__str_block {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100px;
-  width: 100%;
+  width: 100px;
   height: 100px;
   border: none;
   background-color: transparent;
@@ -169,6 +248,7 @@ body {
 }
 
 .menu__line {
+  display: inline;
   width: 60px;
   height: 0px;
   background-color: #FFFFFF;
@@ -278,4 +358,42 @@ body {
   text-transform: capitalize;
   color: #FFFFFF;
   opacity: 0.9;
+}
+
+.menu__burger_rotate {
+  transform: rotate(90deg);
+}
+
+.body_anim {
+  grid-template: 89vh 11vh/minmax(140px, auto) minmax(50px, 250px);
+  grid-template-areas: "a b" "c b";
+}
+
+.menu__links_row {
+  flex-direction: row;
+  gap: 80px;
+}
+
+.menu__name-video_rotate {
+  display: none;
+}
+
+.menu__name-video-playlist_visible {
+  display: inline;
+}
+
+.menu__name-video-br-link_visible {
+  display: inline;
+}
+
+.menu__str_img-kas_visible {
+  display: flex;
+}
+
+.menu__line_no-visible {
+  display: none;
+}
+
+.menu__str_img-oran_visible {
+  display: flex;
 }/*# sourceMappingURL=Animal-site.css.map */
