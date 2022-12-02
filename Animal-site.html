@@ -110,6 +110,7 @@
             const line = document.querySelector(".menu__line");
             const strIMG1 = document.querySelector(".menu__str_img-kas");
             const strIMG2 = document.querySelector(".menu__str_img-oran");
+            const strMenu = document.querySelector(".menu__str_block");
             const black = document.querySelector(".opacity");
 
             but.addEventListener("click", () => {
@@ -125,8 +126,8 @@
                 line.classList.toggle("menu__line_no-visible")
                 strIMG1.classList.toggle("menu__str_img-oran_visible")
                 strIMG2.classList.toggle("menu__str_img-kas_visible")
+                strMenu.classList.toggle("menu__str_block_visible")
                 black.classList.toggle("opacity_visible")
-
 
             });
 

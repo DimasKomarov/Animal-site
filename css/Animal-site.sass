@@ -102,7 +102,7 @@ body
     display: inline
 
 .menu__X
-    display: none  
+    display: none
 
 .menu__links
     display: flex
@@ -226,12 +226,6 @@ body
     img
         height: 100px
 
-@keyframes visible
-  0%
-    opacity: 0
-
-  100%
-    opacity: 1
 
 .menu__str_block
     display: flex
@@ -245,6 +239,13 @@ body
     img
         max-width: 14px
         max-height: 28px
+
+@keyframes visible
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1
 
 .menu__line
     display: inline
@@ -390,6 +391,7 @@ body
 
 .menu__str_img-oran_visible
     display: flex
+    animation: visible 1s ease-in forwards
 
 .opacity_visible
     display: inline
@@ -402,3 +404,7 @@ body
 
 .menu__X_visible
     display: inline
+
+.menu__str_block_visible
+    img
+        animation: visible 1s ease-in forwards
