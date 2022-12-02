@@ -75,6 +75,7 @@ body
     max-width: 100px
 
 .menu
+    z-index: 4
     grid-area: b
     display: flex
     flex-direction: column
@@ -89,14 +90,19 @@ body
 
     // background-color: #c4197d
 
-.menu__burger
-    display: flex
-    justify-content: center
+.menu__burger-and-x
+    display: inline
+    padding: 0 35px
+    text-align: center
     border: none
     background-color: transparent
-    transition: 0.3s
 
     // background-color: #99c232
+.menu__burger
+    display: inline
+
+.menu__X
+    display: none  
 
 .menu__links
     display: flex
@@ -190,6 +196,7 @@ body
     position: relative
     display: none
     align-items: center
+    animation: visible 1s ease-in forwards
     p
         position: absolute
         font-family: 'Roboto'
@@ -206,6 +213,7 @@ body
     position: relative
     display: none
     align-items: center
+    animation: visible 1s ease-in forwards
     p
         position: absolute
         font-family: 'Roboto'
@@ -217,6 +225,13 @@ body
         color: #FFFFFF
     img
         height: 100px
+
+@keyframes visible
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
 
 .menu__str_block
     display: flex
@@ -334,12 +349,25 @@ body
 
 // СТИЛИ ДЛЯ АНИМАЦИИ
 
-.menu__burger_rotate
-    transform: rotate(90deg)
+.opacity
+    position: absolute
+    display: none
+    width: 100%
+    height: 100%
+    z-index: 3
+    left: 0
+    top: 0
+    background: rgba(00, 00, 00, 0.35)
+
+.menu__burger_visible
+    text-align: right
 
 .body_anim
     grid-template: 89vh 11vh / minmax(140px,auto) minmax(50px,250px)
     grid-template-areas: "a b" "c b"
+
+.menu_shadow
+    filter: drop-shadow(-100px 0px 100px rgba(0, 0, 0, 0.65))
 
 .menu__links_row
     flex-direction: row
@@ -362,3 +390,15 @@ body
 
 .menu__str_img-oran_visible
     display: flex
+
+.opacity_visible
+    display: inline
+
+.menu__burger-and-x_right
+    text-align: right
+
+.menu__burger_visible
+    display: none
+
+.menu__X_visible
+    display: inline
