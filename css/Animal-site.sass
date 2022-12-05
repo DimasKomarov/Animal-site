@@ -49,11 +49,10 @@ body
     height: 100vh
     object-fit: cover
 
-.video-preview__play
+.video-preview__drozdov
     position: absolute
-    top: 55vh
+    top: 57vh
     left: 2vw
-    vertical-align: sub
     p
         font-family: 'Roboto'
         font-style: normal
@@ -64,10 +63,10 @@ body
         color: #FFFFFF
         text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75)
 
-.play
+.video-preview__play
     position: absolute
     top: 46%
-    left: 52%
+    left: 50%
     border: none
     background-color: transparent
 
@@ -89,6 +88,11 @@ body
     gap: 100px
 
     // background-color: #c4197d
+
+.menu__burger-links-and-br-link
+    // display: flex
+    // gap: 43px
+    // align-items: center
 
 .menu__burger-and-x
     display: flex
@@ -113,6 +117,10 @@ body
     transition: 1s
 
     // background-color: #3f3f3c
+.link
+    max-width: 20px
+    max-height: 20px
+    margin: 0 auto
 
 .menu__vkont
     max-width: 20px
@@ -405,3 +413,115 @@ body
 .menu__str_block_visible
     img
         animation: visible 1s ease-in forwards
+
+// МЕДИА-ЗАПРОСЫ
+
+@media only screen and (max-width: 1430px)
+    .body
+        grid-template: 54vh 46vh / minmax(140px,100vw) minmax(50px,80px)
+        grid-template-areas: "a b" "c b"
+
+    .video-preview__bear
+        height: 54vh
+        object-fit: fill
+
+    .video-preview__drozdov
+        top: 32vh
+
+    .video-preview__play
+        top: 25%
+        left: 47%
+
+    .video-preview__button
+        max-width: 40px
+
+    .menu__burger-and-x
+        padding: 0 25px
+
+    .desc
+        background: #522F1E
+
+    .desc__text
+        display: flex
+        box-sizing: border-box
+        padding: 20px
+        align-items: start
+        flex-direction: column
+        gap: 20px
+        // background-color: red
+
+    .desc__bear-number
+        p
+            text-align: left
+
+    .desc__line2
+        max-width: 648px
+        width: 100%
+        height: 0px
+
+@media only screen and (max-width: 500px)
+    .body
+        grid-template: 9vh 30vh 61vh / minmax(140px,100vw)
+        grid-template-areas: "b" "a" "c"
+
+    .video-preview__bear
+        height: 30vh
+        object-fit: fill
+    .menu
+        display: flex
+        // justify-content: space-between
+
+    .menu__burger-and-links
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+        margin: 0 auto
+        height: 9vh
+        padding: 0px
+        gap: 23px
+        // background-color: red
+
+    .menu__burger-and-x
+        display: flex
+        padding: 0px
+        // justify-content: center
+        border: none
+        background-color: transparent
+
+    .menu__links
+        display: flex
+        flex-direction: row
+        box-sizing: border-box
+        // margin: 0 auto
+        gap: 24px
+        transition: 1s
+
+    .menu__name-video
+        display: none
+
+    .menu__name-video-br-link
+        display: flex
+        p
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 24px
+        span
+            font-weight: 500
+            font-size: 18px
+
+    .menu__burger-links-and-br-link
+        display: flex
+        gap: 43px
+        align-items: center
+
+    .menu__burger
+        max-width: 20px
+
+    .menu__str
+        display: none
+
+    .video-preview__drozdov
+        p
+            font-size: 18px
+            line-height: 21px
