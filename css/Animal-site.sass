@@ -90,9 +90,10 @@ body
     // background-color: #c4197d
 
 .menu__burger-links-and-br-link
-    // display: flex
-    // gap: 43px
-    // align-items: center
+    display: flex
+    flex-direction: column
+    gap: 100px
+    align-items: center
 
 .menu__burger-and-x
     display: flex
@@ -416,14 +417,13 @@ body
 
 // МЕДИА-ЗАПРОСЫ
 
-@media only screen and (max-width: 1430px)
+@media only screen and (max-width: 1310px)
     .body
         grid-template: 54vh 46vh / minmax(140px,100vw) minmax(50px,80px)
         grid-template-areas: "a b" "c b"
 
     .video-preview__bear
         height: 54vh
-        object-fit: fill
 
     .video-preview__drozdov
         top: 32vh
@@ -459,18 +459,21 @@ body
         width: 100%
         height: 0px
 
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 606px)
     .body
         grid-template: 9vh 30vh 61vh / minmax(140px,100vw)
         grid-template-areas: "b" "a" "c"
 
     .video-preview__bear
         height: 30vh
-        object-fit: fill
+
     .menu
         display: flex
         // justify-content: space-between
 
+    .video-preview__button
+        max-width: 24px
+        
     .menu__burger-and-links
         display: flex
         flex-direction: row-reverse
@@ -478,7 +481,7 @@ body
         margin: 0 auto
         height: 9vh
         padding: 0px
-        gap: 23px
+        gap: 43px
         // background-color: red
 
     .menu__burger-and-x
@@ -512,6 +515,7 @@ body
 
     .menu__burger-links-and-br-link
         display: flex
+        flex-direction: row
         gap: 43px
         align-items: center
 

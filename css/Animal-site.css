@@ -94,6 +94,13 @@ body {
   gap: 100px;
 }
 
+.menu__burger-links-and-br-link {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+}
+
 .menu__burger-and-x {
   display: flex;
   padding: 0 35px;
@@ -469,15 +476,13 @@ body {
           animation: visible 1s ease-in forwards;
 }
 
-@media only screen and (max-width: 1430px) {
+@media only screen and (max-width: 1310px) {
   .body {
     grid-template: 54vh 46vh/minmax(140px, 100vw) minmax(50px, 80px);
     grid-template-areas: "a b" "c b";
   }
   .video-preview__bear {
     height: 54vh;
-    -o-object-fit: fill;
-       object-fit: fill;
   }
   .video-preview__drozdov {
     top: 32vh;
@@ -512,18 +517,19 @@ body {
     height: 0px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 606px) {
   .body {
     grid-template: 9vh 30vh 61vh/minmax(140px, 100vw);
     grid-template-areas: "b" "a" "c";
   }
   .video-preview__bear {
     height: 30vh;
-    -o-object-fit: fill;
-       object-fit: fill;
   }
   .menu {
     display: flex;
+  }
+  .video-preview__button {
+    max-width: 24px;
   }
   .menu__burger-and-links {
     display: flex;
@@ -532,7 +538,7 @@ body {
     margin: 0 auto;
     height: 9vh;
     padding: 0px;
-    gap: 23px;
+    gap: 43px;
   }
   .menu__burger-and-x {
     display: flex;
@@ -565,6 +571,7 @@ body {
   }
   .menu__burger-links-and-br-link {
     display: flex;
+    flex-direction: row;
     gap: 43px;
     align-items: center;
   }
