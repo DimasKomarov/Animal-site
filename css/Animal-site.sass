@@ -29,7 +29,6 @@ body
     overflow: hidden
     min-height: 100vh
     position: relative
-    transition: 1s
     display: grid
     grid-template: 89vh 11vh / minmax(140px,100vw) minmax(50px,100px)
     grid-template-areas: "a b" "c b"
@@ -82,17 +81,20 @@ body
     background: linear-gradient(180.71deg, #7A8110 0.11%, #A2B332 100%)
 
 .menu__burger-and-links
-    padding-top: 35px
+    max-height: 212px
+    height: 100%
+    padding: 35px 0
     display: flex
+    justify-content: space-between
     flex-direction: column
-    gap: 100px
 
     // background-color: #c4197d
 
 .menu__burger-links-and-br-link
     display: flex
+    max-height: 90px
+    height: 100%
     flex-direction: column
-    gap: 100px
     align-items: center
 
 .menu__burger-and-x
@@ -110,10 +112,11 @@ body
     display: none
 
 .menu__links
+    max-height: 90px
+    height: 100%
     display: flex
     flex-direction: column
     box-sizing: border-box
-    margin: 0 auto
     gap: 50px
     transition: 1s
 
@@ -369,10 +372,6 @@ body
     top: 0
     background: rgba(00, 00, 00, 0.35)
 
-.body_anim
-    grid-template: 89vh 11vh / minmax(140px,auto) minmax(50px,250px)
-    grid-template-areas: "a b" "c b"
-
 .menu_shadow
     filter: drop-shadow(-100px 0px 100px rgba(0, 0, 0, 0.65))
 
@@ -417,7 +416,7 @@ body
 
 // МЕДИА-ЗАПРОСЫ
 
-@media only screen and (max-width: 1310px)
+@media only screen and (max-width: 1380px)
     .body
         grid-template: 54vh 46vh / minmax(140px,100vw) minmax(50px,80px)
         grid-template-areas: "a b" "c b"
@@ -459,7 +458,7 @@ body
         width: 100%
         height: 0px
 
-@media only screen and (max-width: 606px)
+@media only screen and (max-width: 770px)
     .body
         grid-template: 9vh 30vh 61vh / minmax(140px,100vw)
         grid-template-areas: "b" "a" "c"
@@ -477,11 +476,10 @@ body
     .menu__burger-and-links
         display: flex
         flex-direction: row-reverse
+        justify-content: space-between 
         align-items: center
-        margin: 0 auto
         height: 9vh
-        padding: 0px
-        gap: 43px
+        padding: 0 20px 
         // background-color: red
 
     .menu__burger-and-x
@@ -492,8 +490,10 @@ body
         background-color: transparent
 
     .menu__links
+        max-width: 64px
         display: flex
         flex-direction: row
+        align-items: center
         box-sizing: border-box
         // margin: 0 auto
         gap: 24px
@@ -514,9 +514,11 @@ body
             font-size: 18px
 
     .menu__burger-links-and-br-link
+        max-width: 385px
+        width: 100%
         display: flex
+        justify-content: space-between
         flex-direction: row
-        gap: 43px
         align-items: center
 
     .menu__burger
