@@ -38,65 +38,67 @@
 
         </div>
         <div class="menu">
-            <div class="menu__burger-and-links">
-                <button class="menu__burger-and-x">
-                    <img class="menu__burger" src="./images/burger.svg" alt="">
-                    <img class="menu__X" src="./images/X.svg" alt="">
-                </button>
-
-                <div class="menu__burger-links-and-br-link">
-                    <div class="menu__links">
-                        <div class="link">
-                            <a href="" class="menu__vkont">
-                                <img src="./images/vkont.svg" alt="">
-                            </a>
+            <div class="menuMain">
+                <div class="menu__burger-and-links">
+                    <button class="menu__burger-and-x">
+                        <img class="menu__burger" src="./images/burger.svg" alt="">
+                        <img class="menu__X" src="./images/X.svg" alt="">
+                    </button>
+    
+                    <div class="menu__burger-links-and-br-link">
+                        <div class="menu__links">
+                            <div class="link">
+                                <a href="" class="menu__vkont">
+                                    <img src="./images/vkont.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="link">
+                                <a href="" class="menu__telega">
+                                    <img src="./images/telega.svg" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <div class="link">
-                            <a href="" class="menu__telega">
-                                <img src="./images/telega.svg" alt="">
-                            </a>
+                        <div class="menu__name-video-br-link">
+                            <p>
+                                Выпуск&nbsp;<span>329</span>
+                            </p>
                         </div>
                     </div>
-                    <div class="menu__name-video-br-link">
+                </div>
+    
+                <div class="menu__name-video-AND-play-video">
+                    <div class="menu__name-video">
                         <p>
                             Выпуск&nbsp;<span>329</span>
                         </p>
                     </div>
-                </div>
-            </div>
-
-            <div class="menu__name-video-AND-play-video">
-                <div class="menu__name-video">
-                    <p>
-                        Выпуск&nbsp;<span>329</span>
-                    </p>
-                </div>
-                <div class="menu__name-video-playlist">
-                    <p>
-                        Все&nbsp;выпуски
-                    </p>
-                </div>
-                <div class="menu__str">
-                    <div class="menu__str_block-img">
-                        <button class="menu__str_block">
-                            <img src="./images/Vector-left.svg" alt="">
-                        </button>
-                        <div class="menu__str_img-kas">
-                            <p>Предыдущий:
-                                Касатка</p>
-                            <img src="./images/kasatka.jpg" alt="">
-                        </div>
+                    <div class="menu__name-video-playlist">
+                        <p>
+                            Все&nbsp;выпуски
+                        </p>
                     </div>
-                    <div class="menu__line"></div>
-                    <div class="menu__str_block-img">
-                        <div class="menu__str_img-oran">
-                            <p>Следующий:
-                                Орангутан</p>
-                            <img src="./images/orangytang.jpg" alt="">
+                    <div class="menu__str">
+                        <div class="menu__str_block-img">
+                            <button class="menu__str_block">
+                                <img src="./images/Vector-left.svg" alt="">
+                            </button>
+                            <div class="menu__str_img-kas">
+                                <p>Предыдущий:
+                                    Касатка</p>
+                                <img src="./images/kasatka.jpg" alt="">
+                            </div>
                         </div>
-                        <button class="menu__str_block">
-                            <img src="./images/Vector-right.svg" alt="">
-                        </button>
+                        <div class="menu__line"></div>
+                        <div class="menu__str_block-img">
+                            <div class="menu__str_img-oran">
+                                <p>Следующий:
+                                    Орангутан</p>
+                                <img src="./images/orangytang.jpg" alt="">
+                            </div>
+                            <button class="menu__str_block">
+                                <img src="./images/Vector-right.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,7 +110,7 @@
             const but1 = document.querySelector(".menu__burger");
             const but2 = document.querySelector(".menu__X");
             const body = document.querySelector(".body");
-            const menu = document.querySelector(".menu");
+            const menu = document.querySelector(".menuMain");
             const links = document.querySelector(".menu__links");
             const nameVideo = document.querySelector(".menu__name-video");
             const nameVideoPlaylist = document.querySelector(".menu__name-video-playlist");
@@ -124,7 +126,7 @@
                 but1.classList.toggle("menu__burger_visible")
                 but2.classList.toggle("menu__X_visible")
                 body.classList.toggle("body_anim")
-                menu.classList.toggle("menu_shadow")
+                menu.classList.toggle("menuMainActive")
                 links.classList.toggle("menu__links_row")
                 nameVideo.classList.toggle("menu__name-video_rotate")
                 nameVideoPlaylist.classList.toggle("menu__name-video-playlist_visible")
@@ -139,24 +141,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-            // const but1 = document.querySelector(".menu__burger");
-            // const menu1 = document.querySelector(".menu");
-            // menu1.addEventListener("mouseout", () => {
-            //     but.classList.toggle("menu__burger_rotate")
-            //     menu.classList.toggle("menu_open")
-            // });
         </script>
         <div class="desc">
             <div class="desc__text">

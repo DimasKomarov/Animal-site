@@ -78,12 +78,28 @@ body {
 }
 
 .menu {
-  z-index: 4;
+  position: relative;
   grid-area: b;
+  background: linear-gradient(180.71deg, #7A8110 0.11%, #A2B332 100%);
+}
+
+.menuMain {
+  z-index: 4;
+  position: absolute;
+  transition: 1s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(180.71deg, #7A8110 0.11%, #A2B332 100%);
+}
+
+.menuMainActive {
+  width: 250px;
+  filter: drop-shadow(-100px 0px 100px rgba(0, 0, 0, 0.65));
 }
 
 .menu__burger-and-links {
@@ -416,10 +432,6 @@ body {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.35);
-}
-
-.menu_shadow {
-  filter: drop-shadow(-100px 0px 100px rgba(0, 0, 0, 0.65));
 }
 
 .menu__links_row {
