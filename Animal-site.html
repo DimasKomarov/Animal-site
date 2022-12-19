@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-
 <head>
     <meta charset="utf-8">
     <title>Animal-site</title>
-
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,16 +10,13 @@
     <meta name="generator" content="N/A">
     <meta name="language" content="Russian">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
     <meta name="theme-color" content="#FFFFFF">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-navbutton-color" content="#FFFFFF">
     <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
-
     <link type="text/css" rel="stylesheet" href="./fonts/fonts.css">
     <link type="text/css" rel="stylesheet" href="./css/Animal-site.css">
 </head>
-
 <body>
     <div class="body">
         <div class="opacity"></div>
@@ -35,7 +30,6 @@
                     <img class="video-preview__button" src="/images/play.svg" alt="">
                 </a>
             </button>
-
         </div>
         <div class="menu">
             <div class="menuMain">
@@ -44,7 +38,6 @@
                         <img class="menu__burger" src="./images/burger.svg" alt="">
                         <img class="menu__X" src="./images/X.svg" alt="">
                     </button>
-    
                     <div class="menu__burger-links-and-br-link">
                         <div class="menu__links">
                             <div class="link">
@@ -65,7 +58,6 @@
                         </div>
                     </div>
                 </div>
-    
                 <div class="menu__name-video-AND-play-video">
                     <div class="menu__name-video">
                         <p>
@@ -104,8 +96,6 @@
             </div>
         </div>
         <script>
-
-
             const but = document.querySelector(".menu__burger-and-x");
             const but1 = document.querySelector(".menu__burger");
             const but2 = document.querySelector(".menu__X");
@@ -121,7 +111,6 @@
             const strIMG2 = document.querySelector(".menu__str_img-oran");
             const strMenu = document.querySelector(".menu__str_block");
             const black = document.querySelector(".opacity");
-
             but.addEventListener("click", () => {
                 but.classList.toggle("menu__burger-and-x_right")
                 but1.classList.toggle("menu__burger_visible")
@@ -139,9 +128,6 @@
                 black.classList.toggle("opacity_visible")
                 menuMobile.classList.toggle("menu__strActive")
             });
-
-
-
         </script>
         <div class="desc">
             <div class="desc__text">
@@ -164,5 +150,4 @@
         </div>
     </div>
 </body>
-
 </html>

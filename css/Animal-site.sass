@@ -32,16 +32,10 @@ body
     display: grid
     grid-template: 89vh 11vh / minmax(140px,100vw) minmax(50px,100px)
     grid-template-areas: "a b" "c b"
-    // fit-content для ограничения максимальной ширины
-    // repeat для повторения одинаковых размеров
-    // grid-template для скоращенной записи выше
-    // grid-template-areas для создания индивидуального расположения у элементов
-    // grid-area название контейнера для св-ва выше
 
 .video-preview
     grid-area: a
     width: 100%
-    // background-color: red
 
 .video-preview__bear
     width: 100%
@@ -76,7 +70,6 @@ body
     position: relative
     grid-area: b
     background: linear-gradient(180.71deg, #7A8110 0.11%, #A2B332 100%)
-    // background-color: red
 
 .menuMain
     z-index: 4
@@ -103,8 +96,6 @@ body
     justify-content: space-between
     flex-direction: column
 
-    // background-color: #c4197d
-
 .menu__burger-links-and-br-link
     display: flex
     max-height: 90px
@@ -119,7 +110,6 @@ body
     border: none
     background-color: transparent
 
-    // background-color: #99c232
 .menu__burger
     display: flex
 
@@ -134,7 +124,6 @@ body
     box-sizing: border-box
     gap: 50px
 
-    // background-color: #3f3f3c
 .link
     max-width: 20px
     max-height: 20px
@@ -143,18 +132,12 @@ body
 .menu__vkont
     max-width: 20px
 
-    // background-color: #0a8e34
-
 .menu__telega
     max-width: 20px
-
-    // background-color: #1532c3
 
 .menu__name-video
     display: flex
     justify-content: center
-
-    // background-color: #a0f0b7
     p
         writing-mode: vertical-lr
         font-family: 'Roboto'
@@ -217,8 +200,6 @@ body
     max-height: 100px
     display: flex
 
-    // background-color: #f8b2b2
-
 .menu__str_img-kas
     position: relative
     display: none
@@ -265,7 +246,6 @@ body
     height: 100px
     border: none
     background-color: transparent
-    // background-color: #be4c4c
     img
         max-width: 14px
         max-height: 28px
@@ -296,7 +276,6 @@ body
     align-items: center
     padding-left: 70px
     gap: 50px
-    // background-color: red
 
 .desc__bear
     display: flex
@@ -379,7 +358,6 @@ body
         opacity: 0.9
 
 // СТИЛИ ДЛЯ АНИМАЦИИ
-
 .opacity
     position: absolute
     display: none
@@ -431,7 +409,6 @@ body
         animation: visible 1s ease-in forwards
 
 // МЕДИА-ЗАПРОСЫ
-
 @media only screen and (max-width: 1380px)
     .body
         grid-template: 54vh 46vh / minmax(140px,100vw) minmax(50px,80px)
@@ -469,7 +446,6 @@ body
         align-items: start
         flex-direction: column
         gap: 20px
-        // background-color: red
 
     .desc__bear-number
         p
@@ -523,7 +499,6 @@ body
         height: 20px
         padding: 0
         margin: 20px 20px
-        // background-color: red
 
     .menu__name-video-AND-play-video
         gap: 30px
