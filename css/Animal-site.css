@@ -163,8 +163,7 @@ body {
   justify-content: center;
 }
 .menu__name-video p {
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -204,8 +203,7 @@ body {
 
 .menu__name-video-playlist {
   display: none;
-  -webkit-animation: visible 1s ease-in forwards;
-          animation: visible 1s ease-in forwards;
+  animation: visible 1s ease-in forwards;
 }
 .menu__name-video-playlist p {
   font-family: "Roboto";
@@ -241,8 +239,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  -webkit-animation: visible 1s ease-in forwards;
-          animation: visible 1s ease-in forwards;
+  animation: visible 1s ease-in forwards;
 }
 .menu__str_img-kas p {
   position: absolute;
@@ -264,8 +261,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  -webkit-animation: visible 1s ease-in forwards;
-          animation: visible 1s ease-in forwards;
+  animation: visible 1s ease-in forwards;
 }
 .menu__str_img-oran p {
   position: absolute;
@@ -294,15 +290,6 @@ body {
 .menu__str_block img {
   max-width: 14px;
   max-height: 28px;
-}
-
-@-webkit-keyframes visible {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes visible {
@@ -465,8 +452,7 @@ body {
 
 .menu__str_img-oran_visible {
   display: flex;
-  -webkit-animation: visible 1s ease-in forwards;
-          animation: visible 1s ease-in forwards;
+  animation: visible 1s ease-in forwards;
 }
 
 .opacity_visible {
@@ -486,8 +472,7 @@ body {
 }
 
 .menu__str_block_visible img {
-  -webkit-animation: visible 1s ease-in forwards;
-          animation: visible 1s ease-in forwards;
+  animation: visible 1s ease-in forwards;
 }
 
 @media only screen and (max-width: 1380px) {
@@ -496,12 +481,10 @@ body {
     grid-template-areas: "a b" "c b";
   }
   .menu__str_img-kas {
-    -webkit-animation: visible 1s ease-in forwards;
-            animation: visible 1s ease-in forwards;
+    animation: visible 1s ease-in forwards;
   }
   .menu__str_img-oran {
-    -webkit-animation: visible 1s ease-in forwards;
-            animation: visible 1s ease-in forwards;
+    animation: visible 1s ease-in forwards;
   }
   .video-preview__bear {
     height: 54vh;
